@@ -1,0 +1,102 @@
+/* ********* */
+/* @FOOTER */
+/* ********* */
+
+//  colores de fondo
+
+.links {
+    background-color: $color_fondo-Links;
+}
+
+.logoIdiomas {
+    background-color: $color_fondo-Logo;
+}
+
+.terminosSocial {
+    background-color: $color_fondo-Terminos;
+}
+
+// Margenes
+.links {
+    &__contenido {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 3.1rem;
+    }
+}
+
+.contenido__listas {
+    padding: 0;
+    li {
+        list-style: none;
+        line-height: 40px;
+        a {
+            color: $color_Links;
+        }
+    }
+    h4 {
+        font-size: 1rem;
+        font-weight: bold;
+        color: $color_Links_titulo;
+    }
+}
+//logo idioma
+.logoIdiomas {
+    &__contenido {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+}
+
+.contenido__logo--texto {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: $color_Links;
+}
+
+.contenido__idiomaSelect {
+    padding: 5px;
+    height: 2em;
+    background-color: white;
+    box-shadow: none;
+    border: 1px solid $color_linea;
+}
+
+.terminosSocial {
+    &__contenido {
+        padding: 1rem;
+    }
+}
+
+.centrar {
+    max-width: $anchoMax;
+    margin: 0 auto;
+}
+
+// Terminos y condiciones
+.terminosSocial__contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+        color: $color_Links;
+    }
+}
+
+// Políticas
+.politicas {
+    column-count: 3;
+    column-rule: 2px solid $color_linea;
+    >* {
+        display: block;
+    }
+}
+
+// Redes Sociales
+a {
+    text-decoration: none;
+}
